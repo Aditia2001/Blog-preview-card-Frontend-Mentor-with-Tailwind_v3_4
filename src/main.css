@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "FigtreeExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./Assets/Fonts/Figtree-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "FigtreeMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./Assets/Fonts/Figtree-Medium.ttf) format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer component {
+  .text-preset-1 {
+    @apply text-2xl leading-[150%] tracking-normal font-figtreeExtrabold;
+  }
+  .text-preset-2 {
+    @apply text-base leading-[150%] tracking-normal font-figtreeMedium;
+  }
+  .text-preset-3 {
+    @apply text-[14px] leading-[150%] tracking-normal font-figtreeMedium;
+  }
+  .text-preset-3-bold {
+    @apply text-[14px] leading-[150%] tracking-normal font-figtreeExtrabold;
+  }
+}
